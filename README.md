@@ -9,3 +9,6 @@ Nothing special. It should provide an endpoint to create a movie record and an e
 ### Notes
 After defining entities we should be able to write tests without mocks. The absence of test mocks is a good sign for
 this layer.
+
+In the use case layer we define the rules related to automatization of our system (interactors).
+Also interfaces and models for details (web, db) are exposed.

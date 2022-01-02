@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class CleanArchitectureApplication
 
 fun main(args: Array<String>) {
-	runApplication<CleanArchitectureApplication>(*args)
+    runApplication<CleanArchitectureApplication>(*args)
 }
