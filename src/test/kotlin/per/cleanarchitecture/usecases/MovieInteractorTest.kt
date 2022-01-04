@@ -6,8 +6,8 @@ import org.mockito.BDDMockito.then
 import org.mockito.Mockito.mock
 import org.mockito.kotlin.any
 import org.mockito.kotlin.times
-import per.cleanarchitecture.entites.CommonMovieFactory
-import per.cleanarchitecture.entites.MovieFactory
+import per.cleanarchitecture.entities.CommonMovieFactory
+import per.cleanarchitecture.entities.MovieFactory
 
 class MovieInteractorTest {
     private val movieFactory: MovieFactory = CommonMovieFactory()

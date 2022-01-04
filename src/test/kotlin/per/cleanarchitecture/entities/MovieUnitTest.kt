@@ -2,7 +2,7 @@ package per.cleanarchitecture.entities
 
 import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Test
-import per.cleanarchitecture.entites.CommonMovie
+import per.cleanarchitecture.entities.model.CommonMovie
 
 class MovieUnitTest {
     @Test
