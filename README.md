@@ -14,3 +14,6 @@ In the use case layer we define the rules related to automatization of our syste
 Also interfaces and models for details (web, db) are exposed.
 
 In next step, we implement our adapters. This layer should contain details for web and db.
+
+In the last step, framework and db driver are defined, along with the nastiest of all, 
+the main class.
