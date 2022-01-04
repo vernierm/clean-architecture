@@ -5,10 +5,10 @@ import javax.persistence.*
 
 @Entity
 @Table(name = "Movie")
-data class MovieDataMapper(
+data class MovieDataMapperModel(
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
-        var id: Int,
-        var name: String,
-        var creationDate: LocalDateTime
+        var id: Int = 0,
+        var name: String = "",
+        var creationDate: LocalDateTime = LocalDateTime.now()
 )

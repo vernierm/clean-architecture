@@ -7,7 +7,7 @@ class JpaMovieGateway(private val repo: JpaMovieRepository) : MovieDataSourceGat
     override fun existsByName(name: String) = repo.findByName(name) != null
 
     override fun save(request: MovieDataSourceModel) {
-        repo.save(MovieDataMapper(0, request.name, request.creationTime))
+        repo.save(MovieDataMapperModel(0, request.name, request.creationTime))
     }
 
     override fun findAll() =
