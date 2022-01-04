@@ -12,3 +12,5 @@ this layer.
 
 In the use case layer we define the rules related to automatization of our system (interactors).
 Also interfaces and models for details (web, db) are exposed.
+
+In next step, we implement our adapters. This layer should contain details for web and db.
