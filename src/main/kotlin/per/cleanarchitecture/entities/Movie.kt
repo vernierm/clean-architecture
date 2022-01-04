@@ -1,4 +1,4 @@
-package per.cleanarchitecture.entities.model
+package per.cleanarchitecture.entities
 
 interface Movie {
     val name: String

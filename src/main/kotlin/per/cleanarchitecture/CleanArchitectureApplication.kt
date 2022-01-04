@@ -8,6 +8,7 @@ import org.springframework.boot.web.servlet.context.AnnotationConfigServletWebSe
 import org.springframework.context.ApplicationContext
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.ClassPathBeanDefinitionScanner
+import org.springframework.core.type.classreading.MetadataReader
 import org.springframework.core.type.filter.TypeFilter
 
 
@@ -33,8 +34,11 @@ class CleanArchitectureApplication {
     }
 
     fun removeModelAndEntitiesFilter() = TypeFilter { mr, _ ->
-        !mr.classMetadata.className.endsWith("Model")
+        !classNameEndsWith(mr, "Model") && !classNameEndsWith(mr, "Movie")
     }
+
+    private fun classNameEndsWith(mr: MetadataReader, s: String) =
+            mr.classMetadata.className.endsWith(s)
 }
 
 fun main(args: Array<String>) {
