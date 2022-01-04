@@ -1,4 +1,4 @@
-package per.cleanarchitecture.movies
+package per.cleanarchitecture.usecases
 
 class MovieRequestModel(val name: String)
 class MovieResponseModel(val name: String, val creationTime: String)

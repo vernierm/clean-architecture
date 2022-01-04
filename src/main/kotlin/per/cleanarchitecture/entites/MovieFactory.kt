@@ -1,4 +1,4 @@
-package per.cleanarchitecture.movies
+package per.cleanarchitecture.entites
 
 interface MovieFactory {
     fun createMovie(name: String): Movie

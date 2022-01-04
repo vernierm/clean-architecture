@@ -1,5 +1,6 @@
-package per.cleanarchitecture.movies
+package per.cleanarchitecture.usecases
 
+import per.cleanarchitecture.entites.MovieFactory
 import java.time.LocalDateTime
 
 class MovieInteractor(

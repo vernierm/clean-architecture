@@ -1,4 +1,4 @@
-package per.cleanarchitecture.movies
+package per.cleanarchitecture.usecases
 
 import java.time.LocalDateTime
 

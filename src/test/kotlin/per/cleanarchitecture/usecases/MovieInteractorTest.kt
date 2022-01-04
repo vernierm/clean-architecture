@@ -1,4 +1,4 @@
-package per.cleanarchitecture.movies
+package per.cleanarchitecture.usecases
 
 import org.junit.jupiter.api.Test
 import org.mockito.BDDMockito.given
@@ -6,6 +6,8 @@ import org.mockito.BDDMockito.then
 import org.mockito.Mockito.mock
 import org.mockito.kotlin.any
 import org.mockito.kotlin.times
+import per.cleanarchitecture.entites.CommonMovieFactory
+import per.cleanarchitecture.entites.MovieFactory
 
 class MovieInteractorTest {
     private val movieFactory: MovieFactory = CommonMovieFactory()
